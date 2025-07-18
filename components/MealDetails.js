@@ -1,11 +1,19 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function MealDetails({ duration, complexity, affordability }) {
+export default function MealDetails({
+  duration,
+  complexity,
+  affordability,
+  style,
+  textStyle,
+}) {
   return (
-    <View style={styles.details}>
-      <Text style={styles.detail}>{duration}mins</Text>
-      <Text style={styles.detail}>{complexity.toUpperCase()}</Text>
-      <Text style={styles.detail}>{affordability.toUpperCase()}</Text>
+    <View style={[styles.details, styles]}>
+      <Text style={[styles.detail, textStyle]}>{duration}mins</Text>
+      <Text style={[styles.detail, textStyle]}>{complexity.toUpperCase()}</Text>
+      <Text style={[styles.detail, textStyle]}>
+        {affordability.toUpperCase()}
+      </Text>
     </View>
   );
 }
