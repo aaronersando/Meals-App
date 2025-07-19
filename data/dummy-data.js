@@ -2,16 +2,16 @@ import Category from "../models/category";
 import Meal from "../models/meal";
 
 export const CATEGORIES = [
-  new Category("c1", "Italian", "#f5428d"),
-  new Category("c2", "Quick & Easy", "#f54242"),
-  new Category("c3", "Hamburgers", "#f5a442"),
-  new Category("c4", "German", "#f5d142"),
-  new Category("c5", "Light & Lovely", "#368dff"),
-  new Category("c6", "Exotic", "#41d95d"),
-  new Category("c7", "Breakfast", "#9eecff"),
-  new Category("c8", "Asian", "#b9ffb0"),
-  new Category("c9", "French", "#ffc7ff"),
-  new Category("c10", "Summer", "#47fced"),
+  new Category("c1", "Italian", "#7C3AED"),        // Deep purple
+  new Category("c2", "Quick & Easy", "#6366F1"),   // Indigo
+  new Category("c3", "Hamburgers", "#818CF8"),     // Light indigo
+  new Category("c4", "German", "#A5B4FC"),         // Lighter indigo
+  new Category("c5", "Light & Lovely", "#C7D2FE"), // Pale indigo
+  new Category("c6", "Exotic", "#38BDF8"),         // Sky blue
+  new Category("c7", "Breakfast", "#0EA5E9"),      // Blue
+  new Category("c8", "Asian", "#06B6D4"),          // Cyan
+  new Category("c9", "French", "#67E8F9"),         // Light cyan
+  new Category("c10", "Summer", "#A21CAF"),        // Magenta accent
 ];
 
 export const MEALS = [
