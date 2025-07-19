@@ -1,17 +1,31 @@
 import Category from "../models/category";
 import Meal from "../models/meal";
 
+// Use a single modern purple for all categories for a unified look
+const unifiedCategoryColor = "#8B5CF6"; // Modern purple
+
 export const CATEGORIES = [
-  new Category("c1", "Italian", "#7C3AED"),        // Deep purple
-  new Category("c2", "Quick & Easy", "#6366F1"),   // Indigo
-  new Category("c3", "Hamburgers", "#818CF8"),     // Light indigo
-  new Category("c4", "German", "#A5B4FC"),         // Lighter indigo
-  new Category("c5", "Light & Lovely", "#C7D2FE"), // Pale indigo
-  new Category("c6", "Exotic", "#38BDF8"),         // Sky blue
-  new Category("c7", "Breakfast", "#0EA5E9"),      // Blue
-  new Category("c8", "Asian", "#06B6D4"),          // Cyan
-  new Category("c9", "French", "#67E8F9"),         // Light cyan
-  new Category("c10", "Summer", "#A21CAF"),        // Magenta accent
+  new Category("c1", "Italian", unifiedCategoryColor),
+  new Category("c2", "Quick & Easy", unifiedCategoryColor),
+  new Category("c3", "Hamburgers", unifiedCategoryColor),
+  new Category("c4", "German", unifiedCategoryColor),
+  new Category("c5", "Light & Lovely", unifiedCategoryColor),
+  new Category("c6", "Exotic", unifiedCategoryColor),
+  new Category("c7", "Breakfast", unifiedCategoryColor),
+  new Category("c8", "Asian", unifiedCategoryColor),
+  new Category("c9", "French", unifiedCategoryColor),
+  new Category("c10", "Summer", unifiedCategoryColor),
+  new Category("c11", "Vegan", unifiedCategoryColor),
+  new Category("c12", "Desserts", unifiedCategoryColor),
+  new Category("c13", "Soups", unifiedCategoryColor),
+  new Category("c14", "Salads", unifiedCategoryColor),
+  new Category("c15", "Drinks", unifiedCategoryColor),
+  // Added new categories
+  new Category("c16", "Seafood", unifiedCategoryColor),
+  new Category("c17", "Pasta", unifiedCategoryColor),
+  new Category("c18", "Pizza", unifiedCategoryColor),
+  new Category("c19", "Steakhouse", unifiedCategoryColor),
+  new Category("c20", "Street Food", unifiedCategoryColor),
 ];
 
 export const MEALS = [
@@ -333,5 +347,222 @@ export const MEALS = [
     true,
     true,
     true
+  ),
+  
+  // Additional meals for new categories
+  new Meal(
+    "m11",
+    ["c11"],
+    "Vegan Buddha Bowl",
+    "affordable",
+    "simple",
+    "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    30,
+    ["Quinoa", "Chickpeas", "Avocado", "Spinach", "Carrots", "Tahini Sauce"],
+    [
+      "Cook quinoa as per instructions.",
+      "Roast chickpeas with spices.",
+      "Slice avocado and carrots.",
+      "Arrange all ingredients in a bowl.",
+      "Drizzle with tahini sauce.",
+    ],
+    true,
+    true,
+    true,
+    true
+  ),
+  
+  new Meal(
+    "m12",
+    ["c12"],
+    "Chocolate Lava Cake",
+    "luxurious",
+    "challenging",
+    "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+    45,
+    ["Dark Chocolate", "Butter", "Eggs", "Sugar", "Flour"],
+    [
+      "Melt chocolate and butter.",
+      "Whisk eggs and sugar.",
+      "Combine all and add flour.",
+      "Pour into ramekins.",
+      "Bake until edges are set but center is gooey.",
+    ],
+    false,
+    false,
+    false,
+    false
+  ),
+  
+  new Meal(
+    "m13",
+    ["c13"],
+    "Classic Tomato Soup",
+    "affordable",
+    "simple",
+    "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    25,
+    ["Tomatoes", "Onion", "Garlic", "Vegetable Broth", "Basil"],
+    [
+      "Sauté onion and garlic.",
+      "Add tomatoes and broth.",
+      "Simmer for 20 minutes.",
+      "Blend until smooth.",
+      "Garnish with basil.",
+    ],
+    true,
+    true,
+    true,
+    true
+  ),
+  
+  new Meal(
+    "m14",
+    ["c14"],
+    "Greek Salad",
+    "affordable",
+    "simple",
+    "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    15,
+    ["Tomatoes", "Cucumber", "Feta Cheese", "Olives", "Red Onion", "Olive Oil"],
+    [
+      "Chop all vegetables.",
+      "Mix in a bowl.",
+      "Add feta and olives.",
+      "Drizzle with olive oil.",
+      "Toss and serve.",
+    ],
+    false,
+    false,
+    false,
+    false
+  ),
+  
+  new Meal(
+    "m15",
+    ["c15"],
+    "Fresh Lemonade",
+    "affordable",
+    "simple",
+    "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=800&q=80",
+    10,
+    ["Lemons", "Sugar", "Water", "Ice"],
+    [
+      "Juice the lemons.",
+      "Mix with sugar and water.",
+      "Add ice and serve chilled.",
+    ],
+    true,
+    true,
+    true,
+    true
+  ),
+  
+  new Meal(
+    "m16",
+    ["c16"],
+    "Grilled Salmon",
+    "pricey",
+    "medium",
+    "https://images.unsplash.com/photo-1485704686097-ed47f7263ca4?auto=format&fit=crop&w=800&q=80",
+    35,
+    ["Salmon Fillet", "Lemon", "Dill", "Olive Oil", "Salt", "Pepper"],
+    [
+      "Season salmon with salt and pepper.",
+      "Heat grill to medium-high heat.",
+      "Grill salmon 6-8 minutes per side.",
+      "Serve with lemon and fresh dill.",
+    ],
+    false,
+    false,
+    false,
+    false
+  ),
+  
+  new Meal(
+    "m17",
+    ["c17"],
+    "Penne Arrabbiata",
+    "affordable",
+    "simple",
+    "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    25,
+    ["Penne Pasta", "Tomato Sauce", "Chili Flakes", "Garlic", "Parsley"],
+    [
+      "Cook penne until al dente.",
+      "Sauté garlic and chili flakes.",
+      "Add tomato sauce and simmer.",
+      "Combine with pasta and garnish with parsley.",
+    ],
+    true,
+    false,
+    false,
+    false
+  ),
+  
+  new Meal(
+    "m18",
+    ["c18"],
+    "Margherita Pizza",
+    "affordable",
+    "simple",
+    "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80",
+    30,
+    ["Pizza Dough", "Tomato Sauce", "Mozzarella", "Basil"],
+    [
+      "Roll out pizza dough.",
+      "Spread tomato sauce evenly.",
+      "Add mozzarella cheese.",
+      "Bake at 220°C for 12-15 minutes.",
+      "Top with fresh basil before serving.",
+    ],
+    false,
+    false,
+    false,
+    false
+  ),
+  
+  new Meal(
+    "m19",
+    ["c19"],
+    "Ribeye Steak",
+    "luxurious",
+    "challenging",
+    "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    50,
+    ["Ribeye Steak", "Salt", "Pepper", "Butter", "Rosemary"],
+    [
+      "Season steak generously with salt and pepper.",
+      "Heat cast iron pan until smoking.",
+      "Sear steak 3-4 minutes per side.",
+      "Add butter and rosemary, baste continuously.",
+      "Rest for 5 minutes before serving.",
+    ],
+    false,
+    false,
+    false,
+    false
+  ),
+  
+  new Meal(
+    "m20",
+    ["c20"],
+    "Tacos al Pastor",
+    "affordable",
+    "medium",
+    "https://images.unsplash.com/photo-1565299585323-38174c6ee69e?auto=format&fit=crop&w=800&q=80",
+    40,
+    ["Pork", "Pineapple", "Tortillas", "Onion", "Cilantro"],
+    [
+      "Marinate pork with spices overnight.",
+      "Grill pork and pineapple.",
+      "Slice meat thinly.",
+      "Warm tortillas on griddle.",
+      "Serve with onion, cilantro, and pineapple.",
+    ],
+    false,
+    false,
+    false,
+    false
   ),
 ];

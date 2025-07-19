@@ -30,6 +30,7 @@ export default function MealsList({ items }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 16,
+    padding: 8, // Reduced padding for better use of space
+    backgroundColor: "transparent", // Transparent to show purple background
   },
 });

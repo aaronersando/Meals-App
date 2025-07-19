@@ -10,15 +10,22 @@ export default function List({ data }) {
 }
 const styles = StyleSheet.create({
   listItem: {
-    borderRadius: 5,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    marginVertical: 4,
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    marginVertical: 6,
     marginHorizontal: 12,
-    backgroundColor: "#e9c6edff",
+    backgroundColor: "#A855F7", // Modern purple background
+    shadowColor: "black",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
   },
   itemText: {
-    color: "#350135ff",
+    color: "white", // White text for better contrast
     textAlign: "center",
+    fontSize: 15,
+    fontWeight: "500",
   },
 });

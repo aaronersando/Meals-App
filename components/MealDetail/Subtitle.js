@@ -11,16 +11,16 @@ export default function Subtitle({ children }) {
 
 const styles = StyleSheet.create({
   subtitle: {
-    color: "#e9c6edff",
-    fontSize: 18,
+    color: "#DDD6FE", // Light purple for better visibility
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
   },
   subtitleContainer: {
-    padding: 6,
-    marginVertical: 4,
+    padding: 8,
+    marginVertical: 8,
     marginHorizontal: 12,
-    borderBottomColor: "white",
+    borderBottomColor: "#DDD6FE", // Light purple border
     borderBottomWidth: 2,
   },
 });

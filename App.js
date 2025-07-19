@@ -19,13 +19,13 @@ function DrawerNavigator() {
   return (
     <Drawer.Navigator
       screenOptions={{
-        headerStyle: { backgroundColor: "#350135ff" },
+        headerStyle: { backgroundColor: "#7C3AED" }, // Modern purple header
         headerTintColor: "white",
-        sceneStyle: { backgroundColor: "#3d253fff" },
-        drawerContentStyle: { backgroundColor: "#350135ff" },
+        sceneStyle: { backgroundColor: "#6D28D9" }, // Slightly darker purple background
+        drawerContentStyle: { backgroundColor: "#8B5CF6" }, // Drawer background matches category color
         drawerInactiveTintColor: "white",
-        drawerActiveTintColor: "#350135ff",
-        drawerActiveBackgroundColor: "#b58fb8ff",
+        drawerActiveTintColor: "#7C3AED",
+        drawerActiveBackgroundColor: "#DDD6FE", // Light purple for active items
       }}
     >
       <Drawer.Screen
@@ -61,9 +61,9 @@ export default function App() {
         <NavigationContainer>
           <Stack.Navigator
             screenOptions={{
-              headerStyle: { backgroundColor: "#350135ff" },
+              headerStyle: { backgroundColor: "#7C3AED" }, // Modern purple header
               headerTintColor: "white",
-              contentStyle: { backgroundColor: "#3d253fff" },
+              contentStyle: { backgroundColor: "#6D28D9" }, // Purple background for all screens
             }}
           >
             <Stack.Screen
