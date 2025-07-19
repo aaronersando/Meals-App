@@ -348,7 +348,7 @@ export const MEALS = [
     true,
     true
   ),
-  
+
   // Additional meals for new categories
   new Meal(
     "m11",
@@ -371,7 +371,7 @@ export const MEALS = [
     true,
     true
   ),
-  
+
   new Meal(
     "m12",
     ["c12"],
@@ -393,7 +393,7 @@ export const MEALS = [
     false,
     false
   ),
-  
+
   new Meal(
     "m13",
     ["c13"],
@@ -415,7 +415,7 @@ export const MEALS = [
     true,
     true
   ),
-  
+
   new Meal(
     "m14",
     ["c14"],
@@ -437,7 +437,7 @@ export const MEALS = [
     false,
     false
   ),
-  
+
   new Meal(
     "m15",
     ["c15"],
@@ -457,7 +457,7 @@ export const MEALS = [
     true,
     true
   ),
-  
+
   new Meal(
     "m16",
     ["c16"],
@@ -478,7 +478,7 @@ export const MEALS = [
     false,
     false
   ),
-  
+
   new Meal(
     "m17",
     ["c17"],
@@ -499,7 +499,7 @@ export const MEALS = [
     false,
     false
   ),
-  
+
   new Meal(
     "m18",
     ["c18"],
@@ -521,7 +521,7 @@ export const MEALS = [
     false,
     false
   ),
-  
+
   new Meal(
     "m19",
     ["c19"],
@@ -543,7 +543,7 @@ export const MEALS = [
     false,
     false
   ),
-  
+
   new Meal(
     "m20",
     ["c20"],
