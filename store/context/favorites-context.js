@@ -6,6 +6,8 @@ const FavoritesContext = createContext({
   removeFavorite: (id) => {},
 });
 
+export { FavoritesContext };
+
 function FavoritesContextProvider({ children }) {
   const [favoriteMealIds, setFavoriteMealIds] = useState([]);
 
